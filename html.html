@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+
+<body>
+    <form>
+        <label for="name" style="text-align: justify;">Name </label>
+        &emsp;<input type="text" id="name" onfocus="FocusBox(this)" onblur="BlurBox(this)"><br>
+        <br>
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" onfocus="FocusBox(this)" onblur="BlurBox(this)"><br>
+        <br>
+        <label for="birth">Date of Birth</label><br>
+        <br>
+        <input type="date" id="birth"><br>
+        <br>
+        <label for="language">Select Your Language </label>
+        <select id="language">
+            <option value="">--Select--</option>
+            <option value="C">C</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">javaScript</option>
+            <option value="Python">Python</option>
+        </select><br>
+        <br>
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+    <div id="result"></div>
+    <script src="js.js"></script>
+</body>
+
+</html>
